@@ -29,6 +29,14 @@ const Text = styled.p`
   }
 `;
 
+const Heading = styled.h3`
+  margin: 0;
+`;
+
+const Item = styled.p`
+  margin: 3px 0 10px;
+`;
+
 const ListContainer = styled.div`
   width: 100%;
   display: grid;
@@ -60,4 +68,4 @@ const ListItem = styled.li`
   }
 `;
 
-export { Container, Text, ListContainer, List, ListItem };
+export { Container, Text, Heading, Item, ListContainer, List, ListItem };

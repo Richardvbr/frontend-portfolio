@@ -70,9 +70,10 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   &:before {
-    content: '–';
+    content: '▹';
     position: absolute;
     margin-left: -1.1em;
+    color: ${({ theme }) => theme.accent};
   }
 
   &:not(last-of-type) {

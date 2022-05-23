@@ -1,4 +1,12 @@
-import { Container, Text, ListContainer, List, ListItem } from './style';
+import {
+  Container,
+  Text,
+  Heading,
+  Item,
+  ListContainer,
+  List,
+  ListItem,
+} from './style';
 
 const About = () => {
   return (
@@ -14,8 +22,7 @@ const About = () => {
         <Text>
           During my graduation year, I realized that I wanted to focus more on
           coding and software development. This led me to pursue front-end
-          development, which turned out to be the perfect fit for me as it
-          combines software development with visuals.
+          development, which turned out to be the perfect fit for me.
         </Text>
         <Text>
           I&apos;m currently working as a front-end engineer at {''}
@@ -28,30 +35,14 @@ const About = () => {
       </div>
       <div>
         <h2>Languages & tools</h2>
-        <ListContainer>
-          <List data-header='languages'>
-            <ListItem>JavaScript (ES6)</ListItem>
-            <ListItem>TypeScript</ListItem>
-            <ListItem>SCSS/CSS</ListItem>
-            <ListItem>HTML</ListItem>
-          </List>
-          <List data-header='frameworks'>
-            <ListItem>React</ListItem>
-            <ListItem>Next.js</ListItem>
-            <ListItem>Gatsby</ListItem>
-          </List>
-          <List data-header='other'>
-            <ListItem>GraphQL</ListItem>
-            <ListItem>Yarn/npm</ListItem>
-            <ListItem>Tailwind CSS</ListItem>
-          </List>
-          <List data-header='tools'>
-            <ListItem>VS Code</ListItem>
-            <ListItem>Git</ListItem>
-            <ListItem>Postman</ListItem>
-            <ListItem>Adobe XD</ListItem>
-          </List>
-        </ListContainer>
+        <Heading>Languages</Heading>
+        <Item>JavaScript, TypeScript, SCSS/CSS, HTML5</Item>
+        <Heading>Frameworks</Heading>
+        <Item>React, Next.js, Gatsby</Item>
+        <Heading>Other</Heading>
+        <Item>GraphQL, DatoCMS, Yarn/npm, styled-components, Supabase</Item>
+        <Heading>Tools</Heading>
+        <Item>VS Code, Git, Postman, Adobe XD</Item>
       </div>
     </Container>
   );

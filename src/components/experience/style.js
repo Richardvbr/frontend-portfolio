@@ -3,7 +3,7 @@ import breakpoints from 'src/styles/breakpoints';
 
 const Container = styled.section`
   max-width: 80vw;
-  margin: 8rem auto 0;
+  margin: 10rem auto 0;
   a,
   span {
     color: ${({ theme }) => theme.accent};
