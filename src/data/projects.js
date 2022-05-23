@@ -52,6 +52,6 @@ export const projects = [
     title: 'Front-end Portfolio',
     languages: ['Next.js', 'Styled Components'],
     description: ['Front-end portfolio'],
-    github: 'https://github.com/Richardvbr/portfolio',
+    github: 'https://github.com/Richardvbr/frontend-portfolio',
   },
 ];
