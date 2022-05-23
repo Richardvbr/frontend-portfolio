@@ -2,6 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
+  // SSR Styled Components
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -34,6 +35,10 @@ class MyDocument extends Document {
           <link
             href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"'
             rel='stylesheet'
+          />
+          <meta
+            name='description'
+            content='I develop responsive user interfaces using modern technologies such as React, Next.js, TypeScript, GraphQL and SCSS.'
           />
           <link rel='shortcut icon' href='/static/images/favicon.ico' />
         </Head>

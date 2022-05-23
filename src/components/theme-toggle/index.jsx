@@ -21,7 +21,7 @@ const ThemeToggle = () => {
     } else {
       setCurrentTheme(JSON.parse(theme));
     }
-  }, []);
+  }, [setCurrentTheme]);
 
   const handleChange = (e) => {
     let theme = e.target.checked ? 'dark' : 'light';
