@@ -3,7 +3,7 @@ export const projects = [
     id: '0',
     img: '/static/images/placeholder.jpg',
     imgAlt: 'OpenCrypto',
-    url: '#',
+    url: '',
     title: 'OpenCrypto (work in progress)',
     languages: ['Next.js', 'TypeScript', 'Supabase', 'GraphQL', 'Chart.js'],
     description: [

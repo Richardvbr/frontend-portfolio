@@ -41,7 +41,7 @@ const ListItem = styled.li`
     content: '▹';
     position: absolute;
     left: 0px;
-    color: ${({ theme }) => theme.accebt};
+    color: ${({ theme }) => theme.accent};
   }
 `;
 
