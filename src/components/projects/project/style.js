@@ -5,12 +5,16 @@ const StyledProject = styled.div`
   display: flex;
   flex-direction: column;
   background: ${({ theme }) => theme.headerBackground};
+  min-height: 335px;
   width: 375px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease;
-  min-height: 335px;
-  &:hover {
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+  will-change: transform;
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.008);
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+    }
   }
   @media only screen and (min-width: ${breakpoints.size.l}) {
     width: unset;
@@ -35,7 +39,10 @@ const Image = styled.img`
 `;
 
 const ContentWrapper = styled.div`
-  padding: 35px;
+  padding: 20px;
+  @media only screen and (min-width: ${breakpoints.size.l}) {
+    padding: 35px;
+  }
 `;
 
 const Languages = styled.div`
@@ -76,8 +83,8 @@ const ListItem = styled.li`
 const Icons = styled.div`
   display: flex;
   gap: 20px;
-  a:hover {
-    svg {
+  @media (hover: hover) {
+    a:hover svg {
       fill: ${({ theme }) => theme.accent};
     }
   }
