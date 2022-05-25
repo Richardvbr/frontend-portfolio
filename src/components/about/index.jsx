@@ -26,7 +26,7 @@ const About = () => {
         </Text>
         <Text>
           I&apos;m currently working as a front-end engineer at {''}
-          <a href='https://trifork.com/' target='_blank' rel='noreferrer'>
+          <a href="https://trifork.com/" target="_blank" rel="noreferrer">
             Trifork
           </a>
           , where I develop responsive user interfaces using modern technologies
@@ -40,9 +40,11 @@ const About = () => {
         <Heading>Frameworks</Heading>
         <Item>React, Next.js, Gatsby</Item>
         <Heading>Other</Heading>
-        <Item>GraphQL, DatoCMS, Yarn/npm, styled-components, Supabase</Item>
+        <Item>
+          GraphQL, DatoCMS, Yarn/npm, styled-components, Supabase, Scrum
+        </Item>
         <Heading>Tools</Heading>
-        <Item>VS Code, Git, Postman, Adobe XD</Item>
+        <Item>VS Code, Git, Azure DevOps, Postman, Adobe XD</Item>
       </div>
     </Container>
   );
