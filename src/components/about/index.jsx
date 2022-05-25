@@ -1,12 +1,4 @@
-import {
-  Container,
-  Text,
-  Heading,
-  Item,
-  ListContainer,
-  List,
-  ListItem,
-} from './style';
+import { Container, Text, Heading, Item } from './style';
 
 const About = () => {
   return (
@@ -37,7 +29,7 @@ const About = () => {
         <h2>Languages & tools</h2>
         <Heading>Languages</Heading>
         <Item>JavaScript, TypeScript, SCSS/CSS, HTML5</Item>
-        <Heading>Frameworks</Heading>
+        <Heading>Frameworks/libraries</Heading>
         <Item>React, Next.js, Gatsby</Item>
         <Heading>Other</Heading>
         <Item>
