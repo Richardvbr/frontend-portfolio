@@ -1,12 +1,4 @@
-import {
-  Container,
-  Text,
-  Heading,
-  Item,
-  ListContainer,
-  List,
-  ListItem,
-} from './style';
+import { Container, Text, Heading, Item } from './style';
 
 const About = () => {
   return (
@@ -25,8 +17,8 @@ const About = () => {
           development, which turned out to be the perfect fit for me.
         </Text>
         <Text>
-          I&apos;m currently working as a front-end developer at {''}
-          <a href='https://trifork.com/' target='_blank' rel='noreferrer'>
+          I&apos;m currently working as a front-end engineer at {''}
+          <a href="https://trifork.com/" target="_blank" rel="noreferrer">
             Trifork
           </a>
           , where I develop responsive user interfaces using modern technologies
@@ -37,12 +29,14 @@ const About = () => {
         <h2>Languages & tools</h2>
         <Heading>Languages</Heading>
         <Item>JavaScript, TypeScript, SCSS/CSS, HTML5</Item>
-        <Heading>Frameworks</Heading>
+        <Heading>Frameworks/libraries</Heading>
         <Item>React, Next.js, Gatsby</Item>
         <Heading>Other</Heading>
-        <Item>GraphQL, DatoCMS, Yarn/npm, styled-components, Supabase</Item>
+        <Item>
+          GraphQL, DatoCMS, Yarn/npm, styled-components, Supabase, Scrum
+        </Item>
         <Heading>Tools</Heading>
-        <Item>VS Code, Git, Postman, Adobe XD</Item>
+        <Item>VS Code, Git, Azure DevOps, Postman, Adobe XD</Item>
       </div>
     </Container>
   );
