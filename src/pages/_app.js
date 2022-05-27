@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Richard van Brunschot | Front-end Engineer</title>
+        <title>Richard van Brunschot | Front-end Developer</title>
       </Head>
       <ThemePreferenceContext.Provider
         value={{ currentTheme, setCurrentTheme }}

@@ -25,7 +25,7 @@ const About = () => {
           development, which turned out to be the perfect fit for me.
         </Text>
         <Text>
-          I&apos;m currently working as a front-end engineer at {''}
+          I&apos;m currently working as a front-end developer at {''}
           <a href='https://trifork.com/' target='_blank' rel='noreferrer'>
             Trifork
           </a>

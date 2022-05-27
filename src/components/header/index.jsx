@@ -55,7 +55,7 @@ const Navigation = () => {
           <Image src={Avatar.src} alt='Richard Avatar' />
           <Heading>Hey, I&apos;m Richard!</Heading>
           <Text>
-            I&apos;m a front-end engineer focused on building modern and
+            I&apos;m a front-end developer focused on building modern and
             responsive web applications
           </Text>
         </ContentWrapper>

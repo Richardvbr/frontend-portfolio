@@ -6,7 +6,7 @@ const Experience = () => {
       <div>
         <h2>Experience</h2>
         <Heading>
-          Front-end Engineer at{' '}
+          Front-end Developer at{' '}
           <span>
             <a href='https://trifork.com/' target='_blank' rel='noreferrer'>
               Trifork

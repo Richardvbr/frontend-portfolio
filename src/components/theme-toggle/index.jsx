@@ -10,7 +10,7 @@ const ThemeToggle = () => {
 
   useEffect(() => {
     const theme = localStorage.getItem('theme');
-    // Check if theme exists in localStorage, if not, then check if user has a preferred color scheme, light them as fallback
+    // Check if theme exists in localStorage, if not, then check if user has a preferred color scheme, light theme as fallback
     if (!theme) {
       const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
       setCurrentTheme(themeQuery.matches ? 'dark' : 'light');
