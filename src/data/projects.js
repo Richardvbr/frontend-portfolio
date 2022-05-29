@@ -9,7 +9,7 @@ export const projects = [
     description: [
       'Free-to-use platform where users can safely practice cryptocurrency trading using virtual funds',
       'Authentication, authorization and database using Supabase',
-      'Buying/selling functionality using API routes and Supabase DB',
+      'Buying/selling functionality using API routes and Supabase DB and back-end validation',
       'Rendering and manipulating data fetched from an external API',
       'Graphs using Chart.js',
       'Next.js server side rendering (SSR)',
