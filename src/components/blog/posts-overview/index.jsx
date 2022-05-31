@@ -2,7 +2,6 @@ import PostCard from '../post-card';
 import * as S from './style';
 
 const PostsOverview = ({ posts }) => {
-  console.log(posts);
   if (!posts || !posts.length) {
     return (
       <S.Heading>
