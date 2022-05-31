@@ -15,7 +15,6 @@ export const Container = styled.section`
 `;
 
 export const Heading = styled.h3`
-  margin-top: 8rem;
   text-align: center;
   font-size: 1.25rem;
   font-weight: 600;
