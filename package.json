@@ -6,15 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@svgr/webpack": "^6.2.1",
     "babel-plugin-styled-components": "^2.0.7",
+    "gray-matter": "^4.0.3",
     "next": "12.1.6",
+    "next-mdx-remote": "^4.0.3",
+    "next-sitemap": "^2.5.28",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-highlight": "^5.0.2",
+    "rehype-slug": "^5.0.1",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

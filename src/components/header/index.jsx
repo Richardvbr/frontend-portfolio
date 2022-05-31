@@ -1,66 +1,38 @@
 import Link from 'next/link';
-import { useContext } from 'react';
-import { BsLinkedin, BsGithub } from 'react-icons/bs';
-
-import { ThemePreferenceContext } from 'src/pages/_app';
 
 import ThemeToggle from '../theme-toggle';
 
-import {
-  Header,
-  Wrapper,
-  Nav,
-  ContentWrapper,
-  Image,
-  Heading,
-  Text,
-} from './style';
+import * as S from './style';
 import Logo from 'public/static/images/logo.svg';
 import Avatar from 'public/static/images/richard.jpg';
-import { Icons } from '../projects/project/style';
 
 const Navigation = () => {
-  const { currentTheme } = useContext(ThemePreferenceContext);
-
   return (
-    <Header>
-      <Wrapper>
-        <Nav>
+    <S.Header>
+      <S.Wrapper>
+        <S.Nav>
           <Link href='/'>
             <a>
               <Logo fill='#119d73' />
             </a>
           </Link>
-          <Icons>
+          <div>
+            <Link href={'/blog'} passHref>
+              <a>Blog</a>
+            </Link>
             <ThemeToggle />
-            <a
-              href='https://www.linkedin.com/in/rbrunschot/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <BsLinkedin
-                color={currentTheme === 'dark' ? '#d1d5e8' : '#222'}
-              />
-            </a>
-            <a
-              href='https://github.com/Richardvbr'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <BsGithub color={currentTheme === 'dark' ? '#d1d5e8' : '#222'} />
-            </a>
-          </Icons>
-        </Nav>
-        <ContentWrapper>
-          <Image src={Avatar.src} alt='Richard Avatar' />
-          <Heading>Hey, I&apos;m Richard!</Heading>
-          <Text>
+          </div>
+        </S.Nav>
+        <S.ContentWrapper>
+          <S.Image src={Avatar.src} alt='Richard Avatar' />
+          <S.Heading>Hey, I&apos;m Richard!</S.Heading>
+          <S.Text>
             I&apos;m a front-end developer focused on building modern and
             responsive web applications
-          </Text>
-        </ContentWrapper>
-      </Wrapper>
-    </Header>
+          </S.Text>
+        </S.ContentWrapper>
+      </S.Wrapper>
+    </S.Header>
   );
 };
 

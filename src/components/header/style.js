@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import breakpoints from 'src/styles/breakpoints';
 
-const Header = styled.header`
+export const Header = styled.header`
   width: 100vw;
   background: ${({ theme }) => theme.headerBackground};
 `;
 
-const Wrapper = styled.section`
+export const Wrapper = styled.section`
   max-width: 80vw;
   margin: 0 auto;
   padding: 1rem 0 4rem;
@@ -15,20 +15,22 @@ const Wrapper = styled.section`
   }
 `;
 
-const Nav = styled.nav`
+export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  a {
-    font-size: 20px;
-    svg {
-      vertical-align: middle;
+  > div {
+    display: flex;
+    align-items: center;
+    &:first-of-type a {
+      margin-right: 20px;
+      margin-bottom: 3px;
     }
   }
 `;
 
-const ContentWrapper = styled.div`
+export const ContentWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -38,22 +40,20 @@ const ContentWrapper = styled.div`
   padding-top: 2.5rem;
 `;
 
-const Image = styled.img`
+export const Image = styled.img`
   border-radius: 50%;
   width: 145px;
   height: 145px;
 `;
 
-const Heading = styled.h1`
+export const Heading = styled.h1`
   font-weight: 700;
   font-size: 3rem;
   margin: 10px;
 `;
 
-const Text = styled.p`
+export const Text = styled.p`
   margin: 0;
   font-size: 1.25rem;
   opacity: 0.8;
 `;
-
-export { Header, Wrapper, Nav, ContentWrapper, Image, Heading, Text };

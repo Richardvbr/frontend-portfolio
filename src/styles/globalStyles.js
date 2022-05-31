@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
 * {
   box-sizing: border-box;
 }
@@ -13,6 +12,9 @@ html {
   background-color: ${({ theme }) => theme.background};
   font-family: ${({ theme }) => theme.font};
   font-weight: 400;
+}
+main {
+  min-height: 50vh;
 }
 
 h1,
@@ -28,12 +30,10 @@ span {
     color: ${({ theme }) => theme.white};
   }
 }
-
 p {
   font-size: 16px;
   line-height: 1.6;
 }
-
 h2 {
   position: relative;
   padding-bottom: 10px;
@@ -47,11 +47,9 @@ h2 {
     width: 65px;
   }
 }
-
 ul {
   padding: 0;
 }
-
 a {
   text-decoration: none;
 }

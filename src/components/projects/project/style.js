@@ -8,14 +8,6 @@ const StyledProject = styled.div`
   min-height: 335px;
   width: 375px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
-  transition: 0.3s ease;
-  will-change: transform;
-  @media (hover: hover) {
-    &:hover {
-      transform: scale(1.008);
-      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
-    }
-  }
   @media only screen and (min-width: ${breakpoints.size.l}) {
     width: unset;
     max-width: 45vw;

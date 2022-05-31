@@ -19,8 +19,8 @@ const Project = ({ project }) => {
           <Heading>{project.title}</Heading>
         </a>
         <Languages>
-          {project.languages?.map((languages, i) => (
-            <p key={i}>{languages}</p>
+          {project.languages?.map((language, i) => (
+            <p key={i}>{language}</p>
           ))}
         </Languages>
         <List>
