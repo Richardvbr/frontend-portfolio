@@ -40,8 +40,8 @@ const ThemeToggle = () => {
 
       <Label htmlFor='checkbox_theme'>
         <Ball />
-        <BsFillSunFill color={'f39c12'} size={18} />
         <FaMoon color={'f39c12'} size={15} />
+        <BsFillSunFill color={'f39c12'} size={18} />
       </Label>
     </div>
   );

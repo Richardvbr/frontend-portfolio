@@ -19,4 +19,5 @@ export const Heading = styled.h3`
   font-size: 1.25rem;
   font-weight: 600;
   opacity: 0.8;
+  margin: 0;
 `;
