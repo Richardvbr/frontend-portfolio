@@ -4,16 +4,16 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
 import { ThemePreferenceContext } from 'src/pages/_app';
 
-import { Icons } from '../projects/project/style';
+import { Icons } from 'src/components/projects/project/style';
 
-import { StyledFooter, Container } from './style';
+import * as S from './style';
 
 const Footer = () => {
   const { currentTheme } = useContext(ThemePreferenceContext);
 
   return (
-    <StyledFooter>
-      <Container>
+    <S.Footer>
+      <S.Container>
         <Icons>
           <a href='mailto:richardvanbrunschot@gmail.com'>
             <AiOutlineMail
@@ -38,8 +38,8 @@ const Footer = () => {
         <div>
           <p>© 2022 Richard van Brunschot</p>
         </div>
-      </Container>
-    </StyledFooter>
+      </S.Container>
+    </S.Footer>
   );
 };
 

@@ -3,7 +3,8 @@ import { BsFillSunFill } from 'react-icons/bs';
 import { FaMoon } from 'react-icons/fa';
 
 import { ThemePreferenceContext } from 'src/pages/_app';
-import { Slider, Label, Ball } from './style';
+
+import * as S from './style';
 
 const ThemeToggle = () => {
   const { currentTheme, setCurrentTheme } = useContext(ThemePreferenceContext);
@@ -31,18 +32,18 @@ const ThemeToggle = () => {
 
   return (
     <div>
-      <Slider
+      <S.Slider
         type='checkbox'
         checked={currentTheme === 'dark'}
         onChange={handleChange}
         id='checkbox_theme'
       />
 
-      <Label htmlFor='checkbox_theme'>
-        <Ball />
+      <S.Label htmlFor='checkbox_theme'>
+        <S.Ball />
         <FaMoon color={'f39c12'} size={15} />
         <BsFillSunFill color={'f39c12'} size={18} />
-      </Label>
+      </S.Label>
     </div>
   );
 };

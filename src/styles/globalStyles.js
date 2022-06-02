@@ -30,6 +30,9 @@ span {
     color: ${({ theme }) => theme.white};
   }
 }
+span.xml {
+  color: #abb2bf;
+}
 p {
   font-size: 16px;
   line-height: 1.6;

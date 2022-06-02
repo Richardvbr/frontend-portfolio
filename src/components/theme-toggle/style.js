@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Label = styled.label`
+export const Label = styled.label`
   transition: ease 0.25s;
   position: relative;
   display: flex;
@@ -16,7 +16,7 @@ const Label = styled.label`
   }
 `;
 
-const Ball = styled.div`
+export const Ball = styled.div`
   transition: ease 0.25s;
   position: absolute;
   width: 18px;
@@ -26,7 +26,7 @@ const Ball = styled.div`
   left: 5px;
 `;
 
-const Slider = styled.input`
+export const Slider = styled.input`
   display: none;
   &:checked + ${Label} {
     background: ${({ theme }) => theme.textColor};
@@ -36,5 +36,3 @@ const Slider = styled.input`
     background: ${({ theme }) => theme.background};
   }
 `;
-
-export { Slider, Label, Ball };

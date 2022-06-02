@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import breakpoints from 'src/styles/breakpoints';
 
-const StyledProject = styled.div`
+export const StyledProject = styled.div`
   display: flex;
   flex-direction: column;
   background: ${({ theme }) => theme.headerBackground};
@@ -21,7 +21,7 @@ const StyledProject = styled.div`
   }
 `;
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 100%;
   @media only screen and (min-width: ${breakpoints.size.l}) {
     height: auto;
@@ -30,14 +30,19 @@ const Image = styled.img`
   }
 `;
 
-const ContentWrapper = styled.div`
+export const ContentWrapper = styled.div`
   padding: 20px;
+
+  h3 {
+    margin: 0 0 10px;
+  }
+
   @media only screen and (min-width: ${breakpoints.size.l}) {
     padding: 35px;
   }
 `;
 
-const Languages = styled.div`
+export const Languages = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -1.25rem;
@@ -53,14 +58,14 @@ const Languages = styled.div`
   }
 `;
 
-const List = styled.ul`
+export const List = styled.ul`
   margin-top: 2rem;
   font-size: 15px;
   list-style: none;
   padding-left: 15px;
 `;
 
-const ListItem = styled.li`
+export const ListItem = styled.li`
   &:before {
     content: '▹';
     position: absolute;
@@ -73,7 +78,7 @@ const ListItem = styled.li`
   }
 `;
 
-const Icons = styled.div`
+export const Icons = styled.div`
   display: flex;
   gap: 20px;
   @media (hover: hover) {
@@ -82,13 +87,3 @@ const Icons = styled.div`
     }
   }
 `;
-
-export {
-  StyledProject,
-  Image,
-  ContentWrapper,
-  Languages,
-  List,
-  ListItem,
-  Icons,
-};

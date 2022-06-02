@@ -1,34 +1,26 @@
 import { BsGithub, BsBoxArrowUpRight } from 'react-icons/bs';
-import { Heading } from 'src/components/experience/style';
-import {
-  StyledProject,
-  Image,
-  ContentWrapper,
-  Languages,
-  List,
-  ListItem,
-  Icons,
-} from './style';
+
+import * as S from './style';
 
 const Project = ({ project }) => {
   return (
-    <StyledProject>
-      <Image src={project.img} alt={project.imgAlt} />
-      <ContentWrapper>
+    <S.StyledProject>
+      <S.Image src={project.img} alt={project.imgAlt} />
+      <S.ContentWrapper>
         <a href={project.url} target='_blank' rel='noreferrer'>
-          <Heading>{project.title}</Heading>
+          <h3>{project.title}</h3>
         </a>
-        <Languages>
+        <S.Languages>
           {project.languages?.map((language, i) => (
             <p key={i}>{language}</p>
           ))}
-        </Languages>
-        <List>
+        </S.Languages>
+        <S.List>
           {project.description?.map((description, i) => (
-            <ListItem key={i}>{description}</ListItem>
+            <S.ListItem key={i}>{description}</S.ListItem>
           ))}
-        </List>
-        <Icons>
+        </S.List>
+        <S.Icons>
           {project.github && (
             <a href={project.github} target='_blank' rel='noreferrer'>
               <BsGithub size={25} />
@@ -40,9 +32,9 @@ const Project = ({ project }) => {
               <BsBoxArrowUpRight size={25} />
             </a>
           )}
-        </Icons>
-      </ContentWrapper>
-    </StyledProject>
+        </S.Icons>
+      </S.ContentWrapper>
+    </S.StyledProject>
   );
 };
 

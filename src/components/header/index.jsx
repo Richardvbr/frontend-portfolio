@@ -1,10 +1,11 @@
 import Link from 'next/link';
 
-import ThemeToggle from '../theme-toggle';
-
-import * as S from './style';
 import Logo from 'public/static/images/logo.svg';
 import Avatar from 'public/static/images/richard.jpg';
+
+import ThemeToggle from 'src/components/theme-toggle';
+
+import * as S from './style';
 
 const Navigation = () => {
   return (

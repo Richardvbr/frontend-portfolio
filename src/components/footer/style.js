@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import breakpoints from 'src/styles/breakpoints';
 
-const StyledFooter = styled.footer`
+export const Footer = styled.footer`
   width: 100vw;
-  margin-top: 8rem;
+  margin-top: 6rem;
   box-shadow: rgb(0 0 0 / 10%) 0px -2px 4px 0px;
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   max-width: 80vw;
-  margin: 8rem auto 0;
+  margin: 6rem auto 0;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -37,5 +37,3 @@ const Container = styled.div`
     }
   }
 `;
-
-export { StyledFooter, Container };

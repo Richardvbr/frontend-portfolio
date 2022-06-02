@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -9,14 +7,16 @@ import 'highlight.js/styles/atom-one-dark.css';
 
 import { getPostFromSlug, getSlugs } from 'src/lib/blog-posts';
 
+import { getLayout } from 'src/components/layout';
+import Post from 'src/components/blog/post';
+
 export default function PostPage({ post }) {
   return (
     <>
       <Head>
-        <title>{post.meta.title}</title>
+        <title>{`${post.meta.title} | Richard van Brunschot | Front-end Developer`}</title>
       </Head>
-      <h1>{post.meta.title}</h1>
-      <MDXRemote {...post.source} components={{ Image }} />
+      <Post post={post} />
     </>
   );
 }
@@ -45,3 +45,5 @@ export const getStaticPaths = async () => {
     fallback: false,
   };
 };
+
+PostPage.getLayout = getLayout;

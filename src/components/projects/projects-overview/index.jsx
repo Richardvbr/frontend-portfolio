@@ -1,18 +1,18 @@
 import Project from '../project';
 import { projects } from '../../../data/projects.js';
 
-import { Container, FlexContainer } from './style';
+import * as S from './style';
 
 const ProjectsOverview = () => {
   return (
-    <Container>
+    <S.Container>
       <h2>Projects</h2>
-      <FlexContainer>
+      <S.FlexContainer>
         {projects.map((project) => (
           <Project project={project} key={project.id} />
         ))}
-      </FlexContainer>
-    </Container>
+      </S.FlexContainer>
+    </S.Container>
   );
 };
 

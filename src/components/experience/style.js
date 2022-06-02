@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import breakpoints from 'src/styles/breakpoints';
 
-const Container = styled.section`
+export const Container = styled.section`
   max-width: 80vw;
   margin: 10rem auto 0;
   a,
@@ -13,21 +13,21 @@ const Container = styled.section`
     margin-bottom: 3rem;
   }
 
+  h3 {
+    margin: 0;
+  }
+
   @media only screen and (min-width: ${breakpoints.size.l}) {
     max-width: 45vw;
   }
 `;
 
-const Heading = styled.h3`
-  margin: 0;
-`;
-
-const Date = styled.p`
+export const Date = styled.p`
   font-size: 14px;
   margin: 0;
 `;
 
-const ListItem = styled.li`
+export const ListItem = styled.li`
   position: relative;
   padding-left: 25px;
   list-style: none;
@@ -44,5 +44,3 @@ const ListItem = styled.li`
     color: ${({ theme }) => theme.accent};
   }
 `;
-
-export { Container, Heading, Date, ListItem };

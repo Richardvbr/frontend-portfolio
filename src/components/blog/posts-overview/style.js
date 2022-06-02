@@ -5,12 +5,17 @@ export const Container = styled.section`
   max-width: 80vw;
   margin: 4rem auto 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   gap: 35px;
 
+  @media only screen and (min-width: ${breakpoints.size.m}) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   @media only screen and (min-width: ${breakpoints.size.l}) {
-    margin-top: 8rem;
+    margin-top: 6rem;
     max-width: 45vw;
+  }
+  @media only screen and (min-width: ${breakpoints.size.xl}) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 `;
 
