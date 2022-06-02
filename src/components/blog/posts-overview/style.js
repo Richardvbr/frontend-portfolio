@@ -10,7 +10,6 @@ export const Container = styled.section`
     margin: 2rem 0;
   }
   @media only screen and (min-width: ${breakpoints.size.l}) {
-    margin-top: 6rem;
     max-width: 45vw;
   }
 `;
