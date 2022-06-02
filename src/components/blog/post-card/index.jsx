@@ -12,7 +12,12 @@ const PostCard = ({ post }) => {
       <S.Card>
         {post?.image && (
           <S.ImageContainer>
-            <Image src={post.image} alt={post.title} layout='fill' />
+            <Image
+              priority={true}
+              src={post.image}
+              alt={post.title}
+              layout='fill'
+            />
           </S.ImageContainer>
         )}
         <S.ContentWrapper>
