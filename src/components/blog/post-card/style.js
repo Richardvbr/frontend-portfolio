@@ -6,6 +6,17 @@ export const Card = styled.div`
   flex-direction: column;
   background: ${({ theme }) => theme.headerBackground};
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+  img {
+    position: relative;
+    min-height: 225px;
+    width: 100%;
+    @media only screen and (min-width: 575px) {
+      min-height: 325px;
+    }
+    @media only screen and (min-width: ${breakpoints.size.m}) {
+      min-height: 225px;
+    }
+  }
   @media (hover: hover) {
     &:hover {
       cursor: pointer;
@@ -20,18 +31,6 @@ export const ContentWrapper = styled.div`
   padding: 10px 35px 35px;
   h3 {
     margin: 0;
-  }
-`;
-
-export const ImageContainer = styled.div`
-  position: relative;
-  min-height: 225px;
-  width: 100%;
-  @media only screen and (min-width: 575px) {
-    min-height: 325px;
-  }
-  @media only screen and (min-width: ${breakpoints.size.m}) {
-    min-height: 225px;
   }
 `;
 

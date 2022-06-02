@@ -10,16 +10,7 @@ const PostCard = ({ post }) => {
   return (
     <Link href={`/blog/${post.slug}`}>
       <S.Card>
-        {post?.image && (
-          <S.ImageContainer>
-            <Image
-              priority={true}
-              src={post.image}
-              alt={post.title}
-              layout='fill'
-            />
-          </S.ImageContainer>
-        )}
+        {post?.image && <img src={post.image} alt={post.title} />}
         <S.ContentWrapper>
           <S.Date>{format(date, 'MMMM dd, Y')}</S.Date>
           <h3>{post.title}</h3>

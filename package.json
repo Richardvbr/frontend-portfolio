@@ -23,7 +23,6 @@
     "rehype-autolink-headings": "^6.1.1",
     "rehype-highlight": "^5.0.2",
     "rehype-slug": "^5.0.1",
-    "sharp": "^0.30.6",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
