@@ -3,7 +3,7 @@ import breakpoints from 'src/styles/breakpoints';
 
 export const Container = styled.section`
   max-width: 80vw;
-  margin: 4rem auto 0;
+  margin: 0 auto;
   gap: 35px;
   h1 {
     font-size: 2.5rem;

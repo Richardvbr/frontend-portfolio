@@ -21,7 +21,6 @@ export const Container = styled.section`
   }
 
   @media only screen and (min-width: ${breakpoints.size.l}) {
-    margin-top: 6rem;
     max-width: 45vw;
   }
 `;

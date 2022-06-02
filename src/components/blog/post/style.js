@@ -3,7 +3,7 @@ import breakpoints from 'src/styles/breakpoints';
 
 export const Container = styled.section`
   max-width: 80vw;
-  margin: 4rem auto 0;
+  margin: 2rem auto 0;
 
   @media only screen and (min-width: ${breakpoints.size.l}) {
     max-width: 45vw;
