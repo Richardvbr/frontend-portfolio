@@ -4,17 +4,23 @@ import breakpoints from 'src/styles/breakpoints';
 export const Container = styled.section`
   max-width: 80vw;
   margin: 4rem auto 0;
-  display: grid;
   gap: 35px;
-
-  @media only screen and (min-width: ${breakpoints.size.m}) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
   }
   @media only screen and (min-width: ${breakpoints.size.l}) {
     margin-top: 6rem;
     max-width: 45vw;
   }
-  @media only screen and (min-width: ${breakpoints.size.xl}) {
+`;
+
+export const GridContainer = styled.section`
+  display: grid;
+  @media only screen and (min-width: ${breakpoints.size.m}) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media only screen and (min-width: 1600px) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 `;

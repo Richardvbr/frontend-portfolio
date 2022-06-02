@@ -10,8 +10,23 @@ export const Container = styled.section`
     max-width: 45vw;
   }
 
+  .back-link {
+    svg {
+      vertical-align: middle;
+      margin-bottom: 2px;
+      margin-right: 10px;
+    }
+    @media (hover: hover) {
+      &:hover {
+        text-decoration: underline;
+        color: ${({ theme }) => theme.accent};
+      }
+    }
+  }
+
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
+    margin: 2rem 0;
   }
 
   h2 {

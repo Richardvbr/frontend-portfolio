@@ -15,9 +15,12 @@ const PostsOverview = ({ posts }) => {
 
   return (
     <S.Container>
-      {posts.map((post) => (
-        <PostCard post={post} key={post.slug} />
-      ))}
+      <h1>Blog posts</h1>
+      <S.GridContainer>
+        {posts.map((post) => (
+          <PostCard post={post} key={post.slug} />
+        ))}
+      </S.GridContainer>
     </S.Container>
   );
 };
