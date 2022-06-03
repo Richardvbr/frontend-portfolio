@@ -28,4 +28,9 @@ export const Nav = styled.nav`
       margin-bottom: 3px;
     }
   }
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
 `;

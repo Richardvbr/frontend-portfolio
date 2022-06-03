@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Logo from 'public/static/images/logo.svg';
+import Logo from 'public/static/images/logo.png';
 
 import ThemeToggle from 'src/components/theme-toggle';
 
@@ -13,7 +13,7 @@ const Navbar = () => {
         <S.Nav>
           <Link href='/'>
             <a>
-              <Logo fill='#119d73' />
+              <img src='/static/images/logo.png' />
             </a>
           </Link>
           <div>
