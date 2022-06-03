@@ -7,7 +7,7 @@ export const Header = styled.header`
 `;
 
 export const Wrapper = styled.section`
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 1rem 0;
   @media only screen and (min-width: ${breakpoints.size.l}) {

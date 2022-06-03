@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import breakpoints from 'src/styles/breakpoints';
 
 export const Container = styled.section`
-  max-width: 80vw;
+  max-width: 90vw;
   margin: 4rem auto 0;
   z-index: 2;
   position: relative;
