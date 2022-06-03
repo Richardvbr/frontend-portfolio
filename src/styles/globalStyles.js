@@ -14,7 +14,7 @@ html {
   font-weight: 400;
 }
 main {
-  min-height: 75vh;
+  min-height: 100vh;
 }
 
 h1,
