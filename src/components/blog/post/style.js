@@ -45,11 +45,13 @@ export const Container = styled.section`
     list-style: none;
 
     li {
-      padding: 5px 0;
+      position: relative;
+      padding: 5px 0 5px 25px;
+      list-style: none;
       &:before {
         content: '▹';
         position: absolute;
-        margin-left: -1.1em;
+        left: 0px;
         color: ${({ theme }) => theme.accent};
       }
     }
