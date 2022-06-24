@@ -5,7 +5,7 @@ export const projects = [
     imgAlt: 'OpenCrypto',
     url: 'https://www.opencrypto.app/',
     title: 'OpenCrypto (work in progress)',
-    languages: ['Next.js', 'TypeScript', 'Supabase', 'GraphQL', 'Chart.js'],
+    languages: ['Next.js', 'TypeScript', 'Supabase', 'GraphQL', 'Recharts'],
     description: [
       'Free-to-use platform where users can safely practice cryptocurrency trading using virtual funds',
       'Authentication, authorization and database using Supabase',
