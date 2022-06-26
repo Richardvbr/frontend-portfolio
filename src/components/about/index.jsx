@@ -7,7 +7,7 @@ const About = () => {
         <h2>Background</h2>
         <S.Text>
           Hi, I&apos;m Richard van Brunschot. Originally from Eindhoven, NL, but
-          I recently moved to Lommel, BE. While studying Computer Animation/VFX
+          in 2021 I moved to Lommel, BE. While studying Computer Animation/VFX
           at the Netherlands Film Academy, I specialized in creating high-end 3D
           models for games and virtual reality.
         </S.Text>
