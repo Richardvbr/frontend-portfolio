@@ -1,17 +1,21 @@
 import Link from 'next/link';
-import { format } from 'date-fns';
 
 import * as S from './style';
 
 const PostCard = ({ post }) => {
   const date = new Date(post.date);
+  const options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
 
   return (
     <Link href={`/blog/${post.slug}`}>
       <S.Card>
         {post?.image && <img src={post.image} alt={post.title} />}
         <S.ContentWrapper>
-          <S.Date>{format(date, 'MMMM dd, Y')}</S.Date>
+          <S.Date>{date.toLocaleDateString('en-US', options)}</S.Date>
           <h3>{post.title}</h3>
           <p>{post.excerpt}</p>
           <S.Tags>
