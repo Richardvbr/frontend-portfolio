@@ -3,7 +3,7 @@ import Link from 'next/link';
 import * as S from './style';
 
 const PostCard = ({ post }) => {
-  const date = new Date(post.date);
+  const date = new Date(post.date.replace(/-/g, '/'));
   const options = {
     year: 'numeric',
     month: 'long',
